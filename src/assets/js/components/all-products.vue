@@ -53,7 +53,7 @@
         methods: {
             fetchProductData: function()
             {
-                this.$http.get('http:/localhost:3000/inventariopos').then((response) => {
+                this.$http.get('http://localhost:3000/inventariopos').then((response) => {
                     this.products = response.body;
                     this.originalProducts = this.products;
                 }, (response) => {
