@@ -48,7 +48,7 @@
             getProduct: function()
             {   
                 console.log(this.$route.params);
-                this.$http.get('http://10.57.65.125:3011/BuscarSerial/' + this.$route.params.id).then((response) => {
+                this.$http.get('http://localhost:3000/BuscarSerial/' + this.$route.params.id).then((response) => {
                     this.product = response.body;
                 }, (response) => {
 
