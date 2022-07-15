@@ -46,7 +46,7 @@ import Notification from './notifications.vue';
            
             addProduct: function()
             {
-                this.$http.post('http://10.57.65.125:3011/insertInvetarioPOS', this.product, {
+                this.$http.post('http://localhost:3000/insertInvetarioPOS', this.product, {
                     headers : {
                         'Content-Type' : 'application/json'
                     }
